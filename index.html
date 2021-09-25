@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="logo">
+        <span> &lt;</span>
+        <span  className="logo-name">Aroma gupta</span>
+        <span >/&gt;</span>
+    </div>
+
+    <h1>MUSIC PLAYER</h1>
+    <div class="music_container ">
+        <div class="music_info">
+            <h4 id="title"></h4>
+            <div class="progress_container">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+
+        <audio src="music/channa.mp3" id="audio"></audio>
+        <div class="img_container">
+            <img src="images/1.jpg" alt="img" id="cover">
+        </div> 
+    <div class="nav">
+        <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+        </button>
+
+        <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+        </button>
+
+        <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+        </button>
+
+    </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
