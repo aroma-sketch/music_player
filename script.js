@@ -80,3 +80,18 @@ nextBtn.addEventListener('click',nextSong)
 audio.addEventListener('timeupdate', updateProgress)
 progressContainer.addEventListener('click', setProgress)
 audio.addEventListener('ended',nextSong)
+
+
+
+const countEL = document.getElementById('count');
+    
+updateVisitCount();
+
+function updateVisitCount() {
+    fetch('https://api.countapi.xyz/update/aroma/musicplayer/?amount=1')
+    .then(res => res.json())
+    .then(res => {
+        countEL.innerHTML = res.value;
+    });
+    
+}
